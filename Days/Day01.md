@@ -21,28 +21,28 @@ Following this subreddit for quicker learning https://www.reddit.com/r/linuxupsk
 
 Commands I'm already familiar with:
 
-ls
-mkdir
-cd
-touch
-vi
-cat
-cp
-chmod (I don't remember the specific permission numbers)
-curl
-ping
-nslookup
-tail
-top
+- ls
+- mkdir
+- cd
+- touch
+- vi
+- cat
+- cp
+- chmod (I don't remember the specific permission numbers)
+- curl
+- ping
+- nslookup
+- tail
+- top
 
 Not familiar with:
-kill
-env
-export
-tar
-du
-ps
-systemctl
-journalctl
+- kill
+- env
+- export
+- tar
+- du
+- ps
+- systemctl
+- journalctl
 
 
