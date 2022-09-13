@@ -9,6 +9,44 @@ Today will be focused on Agile Metholodgy
 
 Agile aims to deliver updates in small increments rather than having a big launch. The goal is to have an optimal user experience.
 
+Projects in the agile metholodgy get broken down in several dynamic phases known as sprints.
+
+## There are four pillars of Agile:
+
+- Individuals over processes and tools: Valuing team collboration and teamwork over independence
+
+- Working software over comprehensive documentation: Software developed should work, documentation isn't as imporatnt as developing good software
+
+- Customer collaboration over contract negotiation: Customers should guide where the software should go
+
+- Responding to change over following a plan: Allowing the team to be flexible so strategies and workflows can shift without derailing the project.
+
+## 12 Principles of Agile
+
+- Satisfy customer through early, continuous improvement and delivery
+
+- Welcome changing requirements, even late in the project
+
+- Deliver value frequently
+
+- Break the silos of your projects
+
+- Build projects around motivated individuals
+
+- The most effective way to communicate is face-to-face
+
+- Working software is the primary measure of progress
+
+- Maintain a sustainable working pace
+
+- Continuous excellence enhances agility
+
+- Simplicity is essential
+
+- Self-organizing teams generate the most value
+
+- Regularly eeflect and adjust your way of work to boost effectiveness
+
 Team - Agile applies to software developers and project managers. DevOps Engineers are considered part of the Agile team because they are involved in all stages of the product cycle and lie in the intersection of development, QA, and operations.
 
 Applied Frameworks - Agile contains many management frameworks to achieve flexibility and transparency.
