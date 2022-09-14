@@ -47,6 +47,14 @@ Projects in the agile metholodgy get broken down in several dynamic phases known
 
 - Regularly eeflect and adjust your way of work to boost effectiveness
 
+## Agile Metholodgies
+
+Kanban is a visual approach to Agile. Tasks are represented by cards on a board and stages are represented in columns. Cards get moved along the board as they're worked on to indicate what stage the task is in.
+
+Scrum is led by a scrum master whose job is to clear all blockers.
+The meetings discuss sprint planning and retrospective or review.
+
+## Terms
 Team - Agile applies to software developers and project managers. DevOps Engineers are considered part of the Agile team because they are involved in all stages of the product cycle and lie in the intersection of development, QA, and operations.
 
 Applied Frameworks - Agile contains many management frameworks to achieve flexibility and transparency.
