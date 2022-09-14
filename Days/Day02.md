@@ -66,6 +66,6 @@ Any files starting with "." in linux are considered hidden files
 
 Modified server name using ```sudo hostnmectl set-hostname _____```
 
-Edited /etc/cloud/cloud.cfg and chanegd "preserve_hostname" to true
+Edited /etc/cloud/cloud.cfg and changed "preserve_hostname" to true
 
 
