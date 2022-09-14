@@ -75,6 +75,8 @@ Modified server name using ```sudo hostnmectl set-hostname _____```
 
 Edited /etc/cloud/cloud.cfg and changed "preserve_hostname" to true
 
+Created web server by installing apache2 
+
 ## Sources
 
 https://asana.com/resources/agile-methodology
