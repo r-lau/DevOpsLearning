@@ -12,8 +12,7 @@ Package manager in centOS is RPM(Red Hat Package Manager)
 
 Configuring application as a service
 Adding a .service file to ```/etc/systemd/system``` with the following content:
-```[Content]
-ExecStart=<command to invoke the application>```
+``` [Content] \n ExecStart=<command to invoke the application>```
 
 Can then use ```systemctl daemon-reload``` to let the system know there's a new service configured followed by ```systemctl start <new service>```
 
