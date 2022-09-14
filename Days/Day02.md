@@ -1,7 +1,6 @@
 ## Day 02
 
 ## Agile Methodlogy
-https://www.agilealliance.org/agile101/
 
 There are two metholodgies in Software Development, waterfall and agile.
 
@@ -76,4 +75,8 @@ Modified server name using ```sudo hostnmectl set-hostname _____```
 
 Edited /etc/cloud/cloud.cfg and changed "preserve_hostname" to true
 
+## Sources
 
+https://asana.com/resources/agile-methodology
+
+https://www.agilealliance.org/agile101/
