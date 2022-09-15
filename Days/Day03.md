@@ -51,3 +51,18 @@ Eth0 does not forward to eth1 by default for security reasons(Ex: Eth0 is privat
 ```/proc/sys/net/ipv4/ip_forward``` is where the setting lies and the value is 0 by default
 This setting does not persist through reboots, for that, must adjust ```net.ipv4.ip_forward``` in ```/etc/sysctl.conf```
 
+## IP Addresses and Ports in Web Application
+Briefly go over how web applications can listen for specific hosts and ports
+Can adjust the the port and IP on where to listen for especially in a web app made from Flask
+
+## YAML
+YAML is used to represent data using key value pairs similar to JSON
+There is always a space after the colon
+Be mindful of the spaces before the key
+
+Note: dictionary is the same as a map, array and lists are the same
+Dictionaries are unordered
+Lists are ordered
+
+
+
