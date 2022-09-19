@@ -84,4 +84,10 @@ metadata:
         volumeMounts:
       - name: nginx-vol
         mountPath: /usr/nginx/html
+   - name: sidecar-container
+     image: curlimages/curl
+     command: ["bin/sh"]
+     args: ["-c", "echo Hello from sidecar container; sleep 300"]
 ```
+
+In the above example, there are key-value pairs, metadata(object), labels(object), spec(object), containers(list of objects), ports(list), volumeMounts(lis of objects)
