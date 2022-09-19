@@ -66,3 +66,22 @@ microservices:
 Can be expressed as ```yes``` or ```no``` along with ```on``` or ```off``` besides ```true``` or ```false```
 
 
+Actual Sample from K8s:
+
+```
+apiVersion: 1
+kind: Pod
+metadata: 
+  name: nginx
+  labels:
+    app: nginx
+  spec: 
+    containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+      - containerPort: 80
+        volumeMounts:
+      - name: nginx-vol
+        mountPath: /usr/nginx/html
+```
