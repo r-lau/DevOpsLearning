@@ -63,6 +63,6 @@ microservices:
 ```
 **Boolean:**
 
-Can be expressed as ```yes``` or ```no``` along with ```on``` or ```off``` besides ```true``` or ````false```
+Can be expressed as ```yes``` or ```no``` along with ```on``` or ```off``` besides ```true``` or ```false```
 
 
