@@ -6,11 +6,14 @@ More in-depth about YAML than Day03.
 
 To start, YAML stands for YAML Ain't Markup Language
 
+It's a data format used to exchange data
+*Can only store data and not commands*
+
 Two extensions: .yaml and .yml
 
 YAML is a superset of JSON; any valid JSON file is also a valid YAML file
 
-Compared to XML and JSON, YAML uses line spearate and indentation
+Compared to XML and JSON, YAML uses line seperate and indentation, but is more human readable and intuitive.
 
 YAML is used in Docker compose files, Ansible, Prometheus, K8s, and more
 
@@ -46,7 +49,7 @@ microservices:
   port: 1000
   version: 1.0
 ```
-Tip: Make sure everything is aligned correctly after starting the list
+*Tip: Make sure everything is aligned correctly after starting the list*
 
 Can add multiple lists in an object
 Can have list inside a list
