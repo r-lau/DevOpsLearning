@@ -14,7 +14,7 @@ Compared to XML and JSON, YAML uses line spearate and indentation
 
 YAML is used in Docker compose files, Ansible, Prometheus, K8s, and more
 
-Syntax of YAML Examples:
+YAML Examples:
 
 **Key-Value Pairs**
 
@@ -91,3 +91,68 @@ metadata:
 ```
 
 In the above example, there are key-value pairs, metadata(object), labels(object), spec(object), containers(list of objects), ports(list), volumeMounts(lis of objects)
+
+**Multiline String:**
+
+```
+multilinestring: |
+  this is a string
+  another string
+  next line
+``` 
+
+```
+multilinesingle: >
+  this is a string
+  that should be on 
+  a single line
+```
+
+Sample from K8s:
+```
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mosquito-config-file
+data:
+  mosquito.conf: |
+    log_dest stdout
+    log_type all
+    log_timestamp true
+    listener 9001
+```
+
+**Environmental Variables:**
+
+Represented by "$"
+
+MySQL Example
+```
+command:
+- /bin/sh
+- -ec
+- >-
+  mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
+```
+
+**Placeholders:**
+
+Example from Helm
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.service.name }}
+spec:
+  selector:
+    app: {{ .Values.service.app }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+```      
+Syntax for placeholders is {{ templategenerator }} 
+
+**Multiple YAML Files:***
+
+Can separate the components with three dashes, "---"
