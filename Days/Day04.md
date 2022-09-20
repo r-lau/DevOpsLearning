@@ -161,31 +161,31 @@ Can separate the components with three dashes, "---"
 **Specifying Data Types:**
 
 Integers
-
+```
 positiveNum: !!int 5
 commaValue: !!int 540_000 #540,000
-
+```
 Floats
-
+```
 grade: !!float 91.5
 infinity: !!float .inf
 not a num: .nan
-
+```
 Boolean:
-
+```
 thisTrue: !!bool true
-
+```
 String:
-
+```
 message: !!str hello world
-
+```
 Null
-
+```
 dataOne: !!null Null
 ~: this is a null key
-
+```
 Date and Time
-
+```
 date: !!timestamp 2022-09-19
-
+```
 *Tip: Defaults to UTC time if no timezone is provided*
