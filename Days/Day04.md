@@ -189,3 +189,102 @@ Date and Time
 date: !!timestamp 2022-09-19
 ```
 *Tip: Defaults to UTC time if no timezone is provided*
+
+**Advanced Data Types:**
+
+Sequence:
+
+```
+student: !!seq
+- marks
+- name
+- stu_id
+```
+
+Spare Sequence:
+```
+sparse:
+- hey
+- how
+- 
+- Null
+```
+
+Nested Sequence:
+```
+-
+  - banana
+  - apple
+-
+  -
+```
+
+Maps:
+Key-value pairs are called maps
+!!map
+
+Nested Maps:
+```
+name: Ray
+role:
+  age: 40
+  job: engineer
+```
+Can also be written as ```role: { age: 40, job: engineer}```
+
+Pairs:
+Keys may have duplicate values
+!!pairs
+
+```
+pair example: !!pairs
+- job: engineer
+- job: contractor
+```
+Can also be written as ```pair example: !!pairs [job: engineer, job: contractor]```
+
+An array of hash tables
+
+Set:
+Allows you to have unique values
+```
+names: !!set
+  ? Tristan
+  ? Greg
+  ? Leo
+```
+
+Dictionary:
+!!omap
+```
+people: !!omap
+  - Ray:
+      name: Ray L
+      age: 90
+  - Greg:
+      name: Greg N
+      age: 81
+```
+
+Reusing properties using anchors:
+```
+likes: &likes
+  fruit: apple
+  brand: bmw
+  
+person:
+  name: Ray
+  <<: *likes
+
+person2:
+  name: Dylan
+  <<: *likes
+  brand: toyota
+```
+
+**Tools:**
+Validating YAML files and working with K8s
+
+Lens: https://k8slens.dev/
+Monokle: https://monokle.kubeshop.io/
+Datree: https://datree.io/
