@@ -1,5 +1,7 @@
 package lasagna
 
+//Exercise 2 for Exercism
+
 // TODO: define the 'OvenTime' constant
 const OvenTime = 40
 
