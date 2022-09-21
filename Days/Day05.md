@@ -64,3 +64,5 @@ func hi (name string) string {
     return "hi " + name
 }
 ```
+
+Resource: https://exercism.org/tracks/go/concepts/basics
