@@ -1,12 +1,10 @@
-## Day 04
-
-## YAML
+## Day 04 - YAML
 
 More in-depth about YAML than Day03.
 
-To start, YAML stands for YAML Ain't Markup Language
+To start, YAML stands for YAML Ain't Markup Language(used to be: Yet Another Markup Language)
 
-It's a data format used to exchange data
+It's a data format used to exchange data and is case sensitive
 *Can only store data and not commands*
 
 Two extensions: .yaml and .yml
@@ -159,3 +157,134 @@ Syntax for placeholders is {{ templategenerator }}
 **Multiple YAML Files:***
 
 Can separate the components with three dashes, "---"
+
+**Specifying Data Types:**
+
+Integers
+```
+positiveNum: !!int 5
+commaValue: !!int 540_000 #540,000
+```
+Floats
+```
+grade: !!float 91.5
+infinity: !!float .inf
+not a num: .nan
+```
+Boolean:
+```
+thisTrue: !!bool true
+```
+String:
+```
+message: !!str hello world
+```
+Null
+```
+dataOne: !!null Null
+~: this is a null key
+```
+Date and Time
+```
+date: !!timestamp 2022-09-19
+```
+*Tip: Defaults to UTC time if no timezone is provided*
+
+**Advanced Data Types:**
+
+Sequence:
+
+```
+student: !!seq
+- marks
+- name
+- stu_id
+```
+
+Spare Sequence:
+```
+sparse:
+- hey
+- how
+- 
+- Null
+```
+
+Nested Sequence:
+```
+-
+  - banana
+  - apple
+-
+  -
+```
+
+Maps:
+Key-value pairs are called maps
+!!map
+
+Nested Maps:
+```
+name: Ray
+role:
+  age: 40
+  job: engineer
+```
+Can also be written as ```role: { age: 40, job: engineer}```
+
+Pairs:
+Keys may have duplicate values
+!!pairs
+
+```
+pair example: !!pairs
+- job: engineer
+- job: contractor
+```
+Can also be written as ```pair example: !!pairs [job: engineer, job: contractor]```
+
+An array of hash tables
+
+Set:
+Allows you to have unique values
+```
+names: !!set
+  ? Tristan
+  ? Greg
+  ? Leo
+```
+
+Dictionary:
+!!omap
+```
+people: !!omap
+  - Ray:
+      name: Ray L
+      age: 90
+  - Greg:
+      name: Greg N
+      age: 81
+```
+
+Reusing properties using anchors:
+```
+likes: &likes
+  fruit: apple
+  brand: bmw
+  
+person:
+  name: Ray
+  <<: *likes
+
+person2:
+  name: Dylan
+  <<: *likes
+  brand: toyota
+```
+
+**Tools:**
+Validating YAML files and working with K8s
+
+Lens: https://k8slens.dev/
+Monokle: https://monokle.kubeshop.io/
+Datree: https://datree.io/
